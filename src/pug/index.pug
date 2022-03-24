@@ -42,52 +42,14 @@ html(lang='en')
                         | Until then, please visit our socials. Don't forget to like, follow, and subscribe!
 
                     // * * * * * * * * * * * * * * *
-                    // * * SB Forms Contact Form * *
+                    // * * 99inbound Contact Form * *
                     // * * * * * * * * * * * * * * *
-
-                    // This form is pre-integrated with SB Forms.
-                    // To make this form functional, sign up at
-                    // https://startbootstrap.com/solution/contact-forms
-                    // to get an API token!
-
-                    form#contactForm(data-sb-form-api-token='API_TOKEN')
-
-                        // Email address input
-
-                        .row.input-group-newsletter
-                            .col
-                                input#email.form-control(
-                                    type='email',
-                                    placeholder='Enter email address...',
-                                    aria-label='Enter email address...',
-                                    data-sb-validations='required,email'
-                                )
-                            .col-auto
-                                button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
-                        .invalid-feedback.mt-2(data-sb-feedback='email:required')
-                            | An email is required.
-                        .invalid-feedback.mt-2(data-sb-feedback='email:email')
-                            | Email is not valid.
-
-                        // Submit success message
-                        //
-                        // This is what your users will see when the form
-                        // has successfully submitted
-
-                        #submitSuccessMessage.d-none
-                            .text-center.mb-3.mt-2
-                                .fw-bolder Form submission successful!
-                                | To activate this form, sign up at
-                                br
-                                a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                        // Submit error message
-                        //
-                        // This is what your users will see when there is
-                        // an error submitting the form
-
-                        #submitErrorMessage.d-none
-                            .text-center.text-danger.mb-3.mt-2 Error sending message!
+                    div(
+                        class="inbound-form-wrapper"
+                        id="form_6662"
+                        data-path="https://app.99inbound.com/i/ca23c838-c271-4297-9591-5cea4c844424"
+                        data-token="RXkIHZnVP2XSapx9dNX31wtt"
+                    )
 
         // Social Icons
         // For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands
@@ -107,8 +69,7 @@ html(lang='en')
         script(src='js/scripts.js')
 
         // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+        // * *                               99inbound Forms JS                        * *
         // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        script(src='https://app.99inbound.com/99inbound.js')

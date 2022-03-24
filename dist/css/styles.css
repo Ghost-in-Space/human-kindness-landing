@@ -11296,26 +11296,26 @@ body {
   position: relative;
 }
 body:before {
+  background-color: #ecc100;
   content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
   position: fixed;
   top: 0;
-  left: 0;
-  height: 100%;
   width: 100%;
-  background-color: #ecc100;
-  opacity: 0.7;
   z-index: 1;
 }
 
 video.bg-video {
+  height: auto;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
   position: fixed;
   top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
   transform: translateX(-50%) translateY(-50%);
+  width: auto;
   z-index: 0;
 }
 
@@ -11330,29 +11330,29 @@ video.bg-video {
   }
 }
 .masthead {
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 .masthead:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
   background-color: rgba(0, 0, 0, 0.85);
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
 }
 .masthead .masthead-content {
-  position: relative;
   max-width: 40rem;
-  padding-top: 5rem;
   padding-bottom: 5rem;
+  padding-top: 5rem;
+  position: relative;
 }
 .masthead .masthead-content h1, .masthead .masthead-content .h1 {
   font-size: 2rem;
@@ -11366,36 +11366,20 @@ video.bg-video {
 .masthead .masthead-content p strong {
   font-weight: 700;
 }
-.masthead .masthead-content .input-group-newsletter input {
-  height: auto;
-  width: 100%;
-  font-size: 1rem;
-  padding: 1rem;
-}
-.masthead .masthead-content .input-group-newsletter button {
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: calc(1rem + 2px);
-}
 
 @media (min-width: 992px) {
   .masthead {
     height: 100%;
-    width: 75vw;
     min-height: 0;
     padding-bottom: 0;
+    width: 75vw;
   }
   .masthead:before {
     transform: skewX(-9deg);
     transform-origin: top right;
   }
   .masthead .masthead-content {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 2rem;
-    padding-right: 9rem;
+    padding: 0 9rem 0 2rem;
   }
   .masthead .masthead-content h1, .masthead .masthead-content .h1 {
     font-size: 3.2rem;
@@ -11417,21 +11401,21 @@ video.bg-video {
   z-index: 2;
 }
 .social-icons .btn {
-  display: inline-flex;
   align-items: center;
+  border-radius: 100rem;
+  display: inline-flex;
+  height: 4rem;
   justify-content: center;
   padding: 0;
-  height: 4rem;
   width: 4rem;
-  border-radius: 100rem;
 }
 
 @media (min-width: 992px) {
   .social-icons {
-    position: absolute;
     height: 100%;
-    top: 0;
+    position: absolute;
     right: 2.5rem;
+    top: 0;
     width: auto;
   }
 }

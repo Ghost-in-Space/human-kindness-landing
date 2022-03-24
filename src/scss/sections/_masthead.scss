@@ -3,32 +3,32 @@
 //
 
 .masthead {
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
 
     // Overlay for the masthead
     &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
         background-color: fade-out($black, 0.15);
+        bottom: 0;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
     }
 
     // Masthead content element
     .masthead-content {
-        position: relative;
         max-width: 40rem;
-        padding-top: 5rem;
         padding-bottom: 5rem;
+        padding-top: 5rem;
+        position: relative;
 
         h1 {
             font-size: 2rem;
@@ -47,22 +47,24 @@
         }
 
         // Styling for the signup form input
-        .input-group-newsletter {
-            input {
-                height: auto;
-                width: 100%;
-                font-size: 1rem;
-                padding: 1rem;
-            }
+        // .inbound-form-wrapper {
+        //     input {
+        //         font-size: 1rem;
+        //         height: auto;
+        //         padding: 1rem;
+        //         width: 100%;
+        //     }
 
-            button {
-                font-size: 0.85rem;
-                font-weight: 700;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                padding: calc(1rem + 2px);
-            }
-        }
+        //     iframe .embedded button[type='submit'] {
+        //         background-color: $primary !important;
+        //         border-color: $primary !important;
+        //         font-size: 0.85rem;
+        //         font-weight: 700;
+        //         letter-spacing: 1px;
+        //         padding: calc(1rem + 2px);
+        //         text-transform: uppercase;
+        //     }
+        // }
     }
 }
 
@@ -70,9 +72,9 @@
 @include media-breakpoint-up(lg) {
     .masthead {
         height: 100%;
-        width: 75vw;
         min-height: 0;
         padding-bottom: 0;
+        width: 75vw;
 
         // Adds a skew effect to the masthead overlay
         &:before {
@@ -81,10 +83,7 @@
         }
 
         .masthead-content {
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 2rem;
-            padding-right: 9rem;
+            padding: 0 9rem 0 2rem;
 
             h1 {
                 font-size: 3.2rem;
