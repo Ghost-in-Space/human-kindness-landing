@@ -55,9 +55,9 @@
         //         width: 100%;
         //     }
 
-        //     iframe .embedded button[type='submit'] {
-        //         background-color: $primary !important;
-        //         border-color: $primary !important;
+        //     button[type='submit'] {
+        //         background-color: $primary;
+        //         border-color: $primary;
         //         font-size: 0.85rem;
         //         font-weight: 700;
         //         letter-spacing: 1px;
@@ -65,6 +65,21 @@
         //         text-transform: uppercase;
         //     }
         // }
+    }
+    .masthead-inner {
+        position: relative;
+
+        .branding-blocker {
+            background-color: #000;
+            border-radius: 4px;
+            bottom: 0;
+            height: 30px;
+            left: 0;
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+            width: 90%;
+        }
     }
 }
 

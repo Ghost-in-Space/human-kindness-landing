@@ -11366,6 +11366,20 @@ video.bg-video {
 .masthead .masthead-content p strong {
   font-weight: 700;
 }
+.masthead .masthead-inner {
+  position: relative;
+}
+.masthead .masthead-inner .branding-blocker {
+  background-color: #000;
+  border-radius: 4px;
+  bottom: 0;
+  height: 30px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 90%;
+}
 
 @media (min-width: 992px) {
   .masthead {

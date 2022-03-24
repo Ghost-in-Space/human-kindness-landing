@@ -5,3 +5,12 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+window.onload = () => {
+  // const iframe = document.getElementsByTagName('iframe');
+  // const iWindow = iframe[0].contentWindow;
+  // const iDocument = iWindow.document;
+
+  // const element = iDocument.getElementsByTagName(button)[0];
+
+  // console.log(iDocument);
+}
