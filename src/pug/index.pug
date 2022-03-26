@@ -37,21 +37,13 @@ html(lang='en')
         // Background Video
         video.bg-video(playsinline='playsinline', autoplay='autoplay', muted='muted', loop='loop')
             source(src='assets/mp4/The Human Kindness (feat. Sarah Keen) LOOP_NOIR.mp4', type='video/mp4')
-            //- source(src='assets/mp4/The Human Kindness (feat. Sarah Keen) LOOP_NOIR.mp4', type='video/mp4')
-            //- source(src='assets/mp4/bg.mp4', type='video/mp4')
 
         // Masthead
         .masthead
             .masthead-content.text-white
                 .masthead-inner.container-fluid.px-4.px-lg-0
                     h1.lh-1 The Human Kindness
-                    h2.fst-italic.lh-1 Under Construction
-                    p
-                        | We're working hard to finish the development of this site. Sign up below to receive updates and to be notified when we launch!
-                    p
-                        | We are a band of kind Humans from Michigan.
-                    p
-                        | Tyler Kuiper, Christopher Morse, Steve Sullivan, Michael Constantine
+                    h2.fst-italic.lh-1.mb-4 A band of kind Humans.
 
                     //- Get it? socialist? socialList? /shrug
                     -
@@ -62,7 +54,7 @@ html(lang='en')
                             'contact': 'mailto:contact@thehumankindnessmusic.com'
                         }
 
-                    ul
+                    ul.thk_social-list
                         each val, key in socialList
                             li.
                                 #[a(href=val) #{key.toUpperCase()}]
@@ -80,21 +72,26 @@ html(lang='en')
 
                     // * * * * * * * * * * * * * * *
                     // * * 99inbound Contact Form * *
-                    // * * * * Direct Link * * * * * *
+                    // * * * * Direct Link * * * * *
                     // * * * * * * * * * * * * * * *
-                    form(action='https://app.99inbound.com/api/e/s2sa8qcq', method='POST', target='_blank')
-                        h2 The Human Kindness Newsletter
+                    form(
+                        class='thk_newsletter-signup mb-4'
+                        action='https://app.99inbound.com/api/e/s2sa8qcq',
+                        method='POST',
+                        target='_blank'
+                    )
+                        h2.lh-1 Sign up for our newsletter to get the latest.
 
                         label(for='fname') First Name
-                        input(type='text', name='fname', placeholder='first name', required)
+                        input.mb-2.p-2.w-50.d-block(type='text', name='fname', placeholder='first name', required)
 
                         label(for='lname') Last Name
-                        input(type='text', name='lname', placeholder='last name', required)
+                        input.mb-2.p-2.w-50.d-block(type='text', name='lname', placeholder='last name', required)
 
                         label(for='email') Email
-                        input(type='email', name='email', placeholder='email', required)
+                        input.mb-2.p-2.w-50.d-block(type='email', name='email', placeholder='email', required)
 
-                        button(type="submit") Notify Me!
+                        button.mt-2(type="submit") Notify Me!
 
                         div(style='position: absolute; left: -5000px;')
                             input(type='checkbox', name='soft_chocolate_paisley_mission', value='1', tabindex='-1', autocomplete='no')

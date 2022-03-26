@@ -35,7 +35,7 @@
         }
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
         p {
@@ -46,25 +46,41 @@
             }
         }
 
-        // Styling for the signup form input
-        // .inbound-form-wrapper {
-        //     input {
-        //         font-size: 1rem;
-        //         height: auto;
-        //         padding: 1rem;
-        //         width: 100%;
-        //     }
+        .thk_social-list {
+            padding: 0;
 
-        //     button[type='submit'] {
-        //         background-color: $primary;
-        //         border-color: $primary;
-        //         font-size: 0.85rem;
-        //         font-weight: 700;
-        //         letter-spacing: 1px;
-        //         padding: calc(1rem + 2px);
-        //         text-transform: uppercase;
-        //     }
-        // }
+            li {
+                display: inline;
+                margin: 1rem;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        // Styling for the signup form input
+        .thk_newsletter-signup {
+            margin: 2rem 0;
+
+            label {
+                font-size: 0.8rem;
+            }
+            input {
+                font-size: 1rem;
+                height: auto;
+            }
+
+            button[type='submit'] {
+                background-color: $primary;
+                border-color: $primary;
+                font-size: 0.85rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                padding: 0.8rem;
+                text-transform: uppercase;
+            }
+        }
     }
 }
 
@@ -86,11 +102,11 @@
             padding: 0 9rem 0 2rem;
 
             h1 {
-                font-size: 3.2rem;
+                font-size: 2.5rem;
             }
 
             h2 {
-                font-size: 2rem;
+                font-size: 1.3rem;
             }
 
             p {
