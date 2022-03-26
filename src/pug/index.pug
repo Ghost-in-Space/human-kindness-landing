@@ -37,29 +37,64 @@ html(lang='en')
         // Background Video
         video.bg-video(playsinline='playsinline', autoplay='autoplay', muted='muted', loop='loop')
             source(src='assets/mp4/The Human Kindness (feat. Sarah Keen) LOOP_NOIR.mp4', type='video/mp4')
-            //- source(src='assets/mp4/The Human Kindness (feat. Sarah Keen) LOOP_NOIR.mp4', type='video/mp4')
-            //- source(src='assets/mp4/bg.mp4', type='video/mp4')
 
         // Masthead
         .masthead
             .masthead-content.text-white
                 .masthead-inner.container-fluid.px-4.px-lg-0
-                    h1.lh-1.mb-4 The Human Kindness
-                    h2.fst-italic.lh-1.mb-4 Under Construction
-                    p.mb-5
-                        | We're working hard to finish the development of this site. Sign up below to receive updates and to be notified when we launch!
-                    p.mb-5
-                        | Until then, please visit our socials.
+                    h1.lh-1 The Human Kindness
+                    h2.fst-italic.lh-1.mb-4 A band of kind Humans.
+
+                    //- Get it? socialist? socialList? /shrug
+                    -
+                        var socialList = {
+                            'youtube': '//www.youtube.com/channel/UCKXwhlVT2ENyhDoy6Uuk--w',
+                            'instagram': '//instagram.com/the_human_kindness',
+                            'facebook': '//www.facebook.com/humankindnessmusic',
+                            'contact': 'mailto:contact@thehumankindnessmusic.com'
+                        }
+
+                    ul.thk_social-list
+                        each val, key in socialList
+                            li.
+                                #[a(href=val) #{key.toUpperCase()}]
 
                     // * * * * * * * * * * * * * * *
                     // * * 99inbound Contact Form * *
+                    // * * * * * iFrame Embed * * * *
                     // * * * * * * * * * * * * * * *
-                    div(
-                        class="inbound-form-wrapper"
-                        id="form_6662"
-                        data-path="https://app.99inbound.com/i/ca23c838-c271-4297-9591-5cea4c844424"
-                        data-token="RXkIHZnVP2XSapx9dNX31wtt"
+                    //- div(
+                    //-     class="inbound-form-wrapper"
+                    //-     id="form_6662"
+                    //-     data-path="https://app.99inbound.com/i/ca23c838-c271-4297-9591-5cea4c844424"
+                    //-     data-token="RXkIHZnVP2XSapx9dNX31wtt"
+                    //- )
+
+                    // * * * * * * * * * * * * * * *
+                    // * * 99inbound Contact Form * *
+                    // * * * * Direct Link * * * * *
+                    // * * * * * * * * * * * * * * *
+                    form(
+                        class='thk_newsletter-signup mb-4'
+                        action='https://app.99inbound.com/api/e/s2sa8qcq',
+                        method='POST',
+                        target='_blank'
                     )
+                        h2.lh-1 Sign up for our newsletter to get the latest.
+
+                        label(for='fname') First Name
+                        input.mb-2.p-2.w-50.d-block(type='text', name='fname', placeholder='first name', required)
+
+                        label(for='lname') Last Name
+                        input.mb-2.p-2.w-50.d-block(type='text', name='lname', placeholder='last name', required)
+
+                        label(for='email') Email
+                        input.mb-2.p-2.w-50.d-block(type='email', name='email', placeholder='email', required)
+
+                        button.mt-2(type="submit") Notify Me!
+
+                        div(style='position: absolute; left: -5000px;')
+                            input(type='checkbox', name='soft_chocolate_paisley_mission', value='1', tabindex='-1', autocomplete='no')
 
         // Social Icons
         // For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands

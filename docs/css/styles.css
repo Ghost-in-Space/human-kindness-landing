@@ -11357,13 +11357,42 @@ video.bg-video {
   font-size: 2rem;
 }
 .masthead .masthead-content h2, .masthead .masthead-content .h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .masthead .masthead-content p {
   font-size: 1rem;
 }
 .masthead .masthead-content p strong {
   font-weight: 700;
+}
+.masthead .masthead-content .thk_social-list {
+  padding: 0;
+}
+.masthead .masthead-content .thk_social-list li {
+  display: inline;
+  margin: 1rem;
+}
+.masthead .masthead-content .thk_social-list a {
+  text-decoration: none;
+}
+.masthead .masthead-content .thk_newsletter-signup {
+  margin: 2rem 0;
+}
+.masthead .masthead-content .thk_newsletter-signup label {
+  font-size: 0.8rem;
+}
+.masthead .masthead-content .thk_newsletter-signup input {
+  font-size: 1rem;
+  height: auto;
+}
+.masthead .masthead-content .thk_newsletter-signup button[type=submit] {
+  background-color: #ecc100;
+  border-color: #ecc100;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.8rem;
+  text-transform: uppercase;
 }
 
 @media (min-width: 992px) {
@@ -11381,10 +11410,10 @@ video.bg-video {
     padding: 0 9rem 0 2rem;
   }
   .masthead .masthead-content h1, .masthead .masthead-content .h1 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
   }
   .masthead .masthead-content h2, .masthead .masthead-content .h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   .masthead .masthead-content p {
     font-size: 1rem;
