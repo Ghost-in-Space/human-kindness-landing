@@ -11321,8 +11321,7 @@ video.bg-video {
 
 @media (pointer: coarse) and (hover: none) {
   body {
-    background: url("../assets/img/_C2A3612_tjs-edit-02-27-22.jpg") #ecc100 no-repeat center center scroll;
-    background-size: cover;
+    background: #ecc100 no-repeat center center scroll;
   }
 
   body video {
